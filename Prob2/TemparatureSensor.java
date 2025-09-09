@@ -16,7 +16,11 @@ public class TemparatureSensor implements Sensor{
 
     @Override
     public String getSensorType() {
+
+        // We can use this.getClass().getSimpleName() for this, but the current class name is "TemparatureSensor", and I just want to return "Temparature" value. So, for this purpose, I return a simple string value as "Temparature";
+        //return this.getClass().getSimpleName();
         return "Temperature";
+
     }
 
     @Override
